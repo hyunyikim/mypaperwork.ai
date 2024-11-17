@@ -1,3 +1,4 @@
+import MaintenanceDate from '@/components/MaintenanceDate';
 import Image from 'next/image';
 
 export default function Maintenance() {
@@ -10,7 +11,7 @@ export default function Maintenance() {
         <section className="flex flex-col">
           <h1>Under Maintenance</h1>
           <p>
-            We are hard at work upgrading our technology and features to save your time. We’ll be back by 8:00 PM CET with some awesome updates.
+            We are hard at work upgrading our technology and features to save your time. We’ll be back by <MaintenanceDate /> with some awesome updates.
             <br />
             Thank you for your understanding.
           </p>
