@@ -1,5 +1,12 @@
 import type { Metadata } from 'next';
+import { Bitter } from 'next/font/google';
+
 import './globals.css';
+
+const bitter = Bitter({
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'mypaperwork',
@@ -12,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={bitter.className}>
       <body>{children}</body>
     </html>
   );
