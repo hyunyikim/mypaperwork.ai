@@ -21,6 +21,9 @@ export default function Maintenance() {
           <Image src="/under-constructions.png" alt="under construction" width={480} height={480} priority />
         </section>
       </main>
+      <div className="fixed bottom-0 -z-50 w-full">
+        <Image src="/background.svg" alt="logo" layout="responsive" width={1440} height={138} />
+      </div>
     </div>
   );
 }
